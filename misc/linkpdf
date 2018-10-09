@@ -1,0 +1,6 @@
+#!/usr/bin/python3
+import pdfkit,sys
+if len(sys.argv) < 3:
+	print('give me a url, and a name to save')
+	sys.exit()
+pdfkit.from_url(sys.argv[1],sys.argv[2]) 

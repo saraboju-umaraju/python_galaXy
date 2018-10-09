@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+file=open('./weblist','r')
+#filecontent=file.read()
+print(file.readlines())
+#print(filecontent)
+file=open('dabba','w')
+file.write('hello world')
+file.close()
+file=open('dabba','a')
+file.write('hello world')

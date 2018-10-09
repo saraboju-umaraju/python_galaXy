@@ -1,0 +1,10 @@
+#!/usr/bin/python3
+print('hello lazy people')
+print('what is your name')
+name=input()
+print('its good to meet you' + name)
+print('len of your name is ')
+print(len(name))
+print('whats your age')
+age=input()
+print('you will be ' + str(int(age)+1) + 'next year')

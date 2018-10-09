@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+import re
+nongreedyRegex = re.compile(r'<.*>')
+mo = nongreedyRegex.search('<To serve man> for dinner.>')
+print(mo.group())
+nongreedyRegex = re.compile(r'<.*?>')
+mo = nongreedyRegex.search('<To serve man> for dinner.>')
+print(mo.group())
+new=re.compile(r'uma: (.*?)')
+mo=new.search('uma: (hello all)')
+print(mo.group())
+noNewlineRegex = re.compile('.*')
+print(noNewlineRegex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group())
+noNewlineRegex = re.compile('.*',re.DOTALL)
+print(noNewlineRegex.search('Serve the public trust.\nProtect the innocent.\nUphold the law.').group())
